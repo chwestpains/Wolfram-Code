@@ -1,0 +1,142 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4633,        134]
+NotebookOptionsPosition[      4125,        117]
+NotebookOutlinePosition[      4461,        132]
+CellTagsIndexPosition[      4418,        129]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",ExpressionUUID->"7e5a6b9c-5b27-40dc-a3fe-8c7c85cac4f5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Framed", "[", 
+  RowBox[{"Column", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "=", "\"\<r__e\>\""}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Crossword Solver\>\"", ",", "Large"}], "]"}], "]"}]}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Text", "[", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<Enter the clue into the box, and see a list if possible answers \
+appear!\>\"", ",", " ", "Medium"}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Text", "[", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<Use _ to represent a missig letter\>\"", ",", " ", "Medium"}], 
+       "]"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"\"\<Clue \>\"", " ", 
+      RowBox[{"InputField", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "[", "x", "]"}], ",", "String", ",", 
+        RowBox[{"ContinuousAction", "\[Rule]", "True"}]}], "]"}]}], ",", 
+     RowBox[{"Dynamic", "[", 
+      RowBox[{"\"\<Possible Answers \>\"", " ", 
+       RowBox[{"Framed", "[", 
+        RowBox[{"Column", "[", 
+         RowBox[{"ReleaseHold", "[", 
+          RowBox[{"WolframAlpha", "[", 
+           RowBox[{"x", ",", "\"\<WolframParse\>\""}], "]"}], "]"}], "]"}], 
+        "]"}]}], "]"}]}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7942385894093723`*^9, 3.794238651637889*^9}, {
+  3.7942386942060957`*^9, 3.794238696087138*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"a1b55c69-6daa-47a6-a9b8-7fbb7399b577"],
+
+Cell[BoxData[
+ FrameBox[
+  TagBox[GridBox[{
+     {
+      InterpretationBox[Cell[BoxData[
+        FormBox[
+         StyleBox["\<\"Crossword Solver\"\>",
+          StripOnInput->False,
+          FontSize->Large], TextForm]], "InlineText",ExpressionUUID->
+        "910bfd0a-efcf-4845-8a78-b22fae2ce6f2"],
+       Text[
+        Style["Crossword Solver", Large]]]},
+     {
+      InterpretationBox[Cell[BoxData[
+        FormBox[
+         StyleBox["\<\"Enter the clue into the box, and see a list if \
+possible answers appear!\"\>",
+          StripOnInput->False,
+          FontSize->Medium], TextForm]], "InlineText",ExpressionUUID->
+        "47912d44-3dc9-45e6-ab2f-890e4ca731ef"],
+       Text[
+        Style[
+        "Enter the clue into the box, and see a list if possible answers \
+appear!", Medium]]]},
+     {
+      InterpretationBox[Cell[BoxData[
+        FormBox[
+         StyleBox["\<\"Use _ to represent a missig letter\"\>",
+          StripOnInput->False,
+          FontSize->Medium], TextForm]], "InlineText",ExpressionUUID->
+        "0c881c62-93a3-442e-b258-e1224c0e4517"],
+       Text[
+        Style["Use _ to represent a missig letter", Medium]]]},
+     {
+      RowBox[{"\<\"Clue \"\>", " ", 
+       InputFieldBox[Dynamic[ResourceSystemClient`Private`x], String,
+        ContinuousAction->True]}]},
+     {
+      DynamicBox[ToBoxes["Possible Answers " Framed[
+          Column[
+           ReleaseHold[
+            WolframAlpha[ResourceSystemClient`Private`x, "WolframParse"]]]], 
+        StandardForm],
+       ImageSizeCache->{281., {10., 18.}}]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{3.794238698307454*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"0ed40a4f-ecdd-416b-b62d-072d7d3545bb"]
+}, Open  ]]
+},
+WindowSize->{570, 627},
+WindowMargins->{{Automatic, 509}, {198, Automatic}},
+FrontEndVersion->"12.0 for Linux ARM (32-bit) (June 23, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 81, 0, 31, "Input",ExpressionUUID->"7e5a6b9c-5b27-40dc-a3fe-8c7c85cac4f5"],
+Cell[CellGroupData[{
+Cell[664, 24, 1558, 37, 354, "Input",ExpressionUUID->"a1b55c69-6daa-47a6-a9b8-7fbb7399b577"],
+Cell[2225, 63, 1884, 51, 188, "Output",ExpressionUUID->"0ed40a4f-ecdd-416b-b62d-072d7d3545bb"]
+}, Open  ]]
+}
+]
+*)
+
